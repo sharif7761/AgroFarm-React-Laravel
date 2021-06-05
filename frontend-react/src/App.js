@@ -2,6 +2,9 @@ import React from 'react';
 import Header from "./components/includes/Header";
 import {BrowserRouter, Route} from "react-router-dom";
 import Login from "./components/Login";
+import Register from "./components/Register";
+import Home from "./components/Home";
+import Shop from "./components/Shop";
 
 function App() {
   return (
@@ -10,6 +13,15 @@ function App() {
             <Header />
             <Route path="/login">
                 <Login />
+            </Route>
+            <Route path="/registration">
+                <Register />
+            </Route>
+            <Route path="/shop">
+                <Shop />
+            </Route>
+            <Route exact path='/'>
+                <Home />
             </Route>
         </BrowserRouter>
     </div>
