@@ -1,8 +1,17 @@
-import { Button } from 'react-bootstrap';
+import React from 'react';
+import Header from "./components/includes/Header";
+import {BrowserRouter, Route} from "react-router-dom";
+import Login from "./components/Login";
+
 function App() {
   return (
     <div className="App">
-        <Button>Boostrap button</Button>
+        <BrowserRouter>
+            <Header />
+            <Route path="/login">
+                <Login />
+            </Route>
+        </BrowserRouter>
     </div>
   );
 }
