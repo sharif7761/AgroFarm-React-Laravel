@@ -13,6 +13,7 @@ const Header = () => {
                     <Link to='/shop'>Shop</Link>
                     <Link to='/login'>Login</Link>
                     <Link to='/registration'>Register</Link>
+                    <Link to='/cart'>Cart</Link>
                 </Nav>
             </Navbar>
         </>

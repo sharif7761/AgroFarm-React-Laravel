@@ -6,6 +6,8 @@ import Register from "./components/Register";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
 import Products from "./components/Products";
+import Cart from './components/Cart';
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -23,6 +25,12 @@ function App() {
             </Route>
             <Route path="/products">
                 <Products />
+            </Route>
+            <Route path="/cart">
+                <Cart />
+            </Route>
+            <Route path="/checkout">
+                <Checkout />
             </Route>
             <Route exact path='/'>
                 <Home />
