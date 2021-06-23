@@ -8,6 +8,7 @@ import Shop from "./components/Shop";
 import Products from "./components/Products";
 import Cart from './components/Cart';
 import Checkout from "./components/Checkout";
+import AdminLogin from "./components/admin/AdminLogin";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route path="/checkout">
                 <Checkout />
+            </Route>
+            <Route path="/admin">
+                <AdminLogin />
             </Route>
             <Route exact path='/'>
                 <Home />
