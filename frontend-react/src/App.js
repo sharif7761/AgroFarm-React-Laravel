@@ -9,6 +9,7 @@ import Products from "./components/Products";
 import Cart from './components/Cart';
 import Checkout from "./components/Checkout";
 import AdminLogin from "./components/admin/AdminLogin";
+import ProductList from "./components/admin/ProductList";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
             </Route>
             <Route path="/admin">
                 <AdminLogin />
+            </Route>
+            <Route path="/product_list">
+                <ProductList />
             </Route>
             <Route exact path='/'>
                 <Home />
