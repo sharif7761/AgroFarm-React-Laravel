@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const AdminLogin = () => {
     return (
@@ -15,7 +16,7 @@ const AdminLogin = () => {
                         <label htmlFor="exampleInputPassword1">Password</label>
                         <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <Link to='/product_list'  className="btn btn-primary">Submit</Link>
                 </form>
             </div>
         </div>
