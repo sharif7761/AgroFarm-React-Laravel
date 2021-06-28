@@ -1,10 +1,12 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const ProductList = () => {
     return (
         <div>
             <div className="container my-5">
                 <h3>Product List</h3>
+                <Link to='/add-product' className='btn btn-primary float-right my-5'>Add Product</Link>
                 <hr />
                 <table className="table table-hover">
                     <thead>
